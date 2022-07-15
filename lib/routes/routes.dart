@@ -5,6 +5,7 @@ import '../views/authentication_screen.dart';
 import '../views/choose_language_screen.dart';
 import '../views/login_screen.dart';
 import '../views/otp_screen.dart';
+import '../views/pages/navigationbar_page.dart';
 import '../views/pages/onboarding_pages.dart';
 import '../views/register_screen.dart';
 import '../views/splash_screen.dart';
@@ -18,6 +19,7 @@ const String registrationScreen = '/register-screen';
 const String otpScreen = '/otp-screen';
 const String successScreen = '/success-screen';
 const String loginScreen = '/login-screen';
+const String bottomNavigationPage = '/bottomNavigation-screen';
 
 List<GetPage> pages = [
   GetPage(name: splashScreen, page: () => SplashScreen()),
@@ -28,4 +30,5 @@ List<GetPage> pages = [
   GetPage(name: otpScreen, page: () => OtpScreen()),
   GetPage(name: successScreen, page: () => SuccessScreen()),
   GetPage(name: loginScreen, page: () => LoginScreen()),
+  GetPage(name: bottomNavigationPage, page: () => NavigationbarPage()),
 ];

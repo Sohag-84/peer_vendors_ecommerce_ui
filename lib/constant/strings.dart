@@ -57,3 +57,10 @@ class LoginText {
   static const String country = "Select Your Country";
   static const String buttonText = "Continue";
 }
+
+class DialogText {
+  static const String title = "Help & Support";
+  static const String text_1 = "Fix My Location Problem";
+  static const String text_2 = "How to use this app";
+  static const String text_3 = "Contact us for Location";
+}
