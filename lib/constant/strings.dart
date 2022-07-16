@@ -64,3 +64,39 @@ class DialogText {
   static const String text_2 = "How to use this app";
   static const String text_3 = "Contact us for Location";
 }
+
+class HomePageText{
+  static const List<String> categories = [
+    "Car,Bikes, Bicycles",
+    "Electronics & Appliances",
+    "Groceries",
+    "Toys",
+    "Sports",
+    "Fashion"
+  ];
+  static const List gridImage = [
+    'images/watch.png',
+    'images/watch_2.png',
+    'images/watch_3.png',
+    'images/watch_4.png',
+    'images/watch_5.png',
+    'images/watch_6.png',
+    'images/watch_7.png',
+    'images/watch_8.png',
+    'images/watch_9.png',
+    'images/watch_10.png',
+    'images/watch_11.png',
+    'images/watch_12.png',
+  ];
+
+  static const List<int> prices = [
+    359,403,120,405,300,80,500,250,199,135,229,545,
+  ];
+
+  static const List<String> watchBrands = [
+    "Apple","Samsung","Jaquet Droz","Rolex","Glashutte Original",
+    "Omega","Jaeger-LeCoultre","Ulysse Nardin","Breguet",
+    "Patek Philippe","Audemars Piguet","TAG Heuer",
+  ];
+
+}

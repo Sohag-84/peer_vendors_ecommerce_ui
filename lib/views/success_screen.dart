@@ -16,7 +16,7 @@ class SuccessScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             InkWell(
-              onTap: () => Get.toNamed(bottomNavigationPage),
+              onTap: () => Get.offAllNamed(bottomNavigationPage),
               child: Image.asset(
                 'images/check.png',
                 height: 118.h,
