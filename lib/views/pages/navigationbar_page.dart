@@ -25,7 +25,7 @@ class _NavigationbarPageState extends State<NavigationbarPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      //floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       backgroundColor: BackgroundColor.bg_color,
       floatingActionButton: FloatingActionButton(
         onPressed: () => Text(""),
@@ -69,96 +69,101 @@ class _NavigationbarPageState extends State<NavigationbarPage> {
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Account"),
         ],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
+      body: Stack(
+        // mainAxisAlignment: MainAxisAlignment.center,
+        // crossAxisAlignment: CrossAxisAlignment.center,
+        clipBehavior: Clip.none,
         children: [
-          InkWell(
-            onTap: () {
-              showDialog(
-                context: context,
-                builder: (_) {
-                  return Center(
-                    child: Stack(
-                      clipBehavior: Clip.none,
-                      children: [
-                        Container(
-                          height: 328.h,
-                          width: 368.w,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10.r),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsets.all(30.0),
-                            child: Column(
-                              children: [
-                                Text(
-                                  DialogText.title,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 24.sp,
-                                    color: Color(0xFF3A3030),
-                                    decoration: TextDecoration.none,
-                                  ),
-                                ),
-                                SizedBox(height: 30.h),
-                                dialogText(
-                                    title: DialogText.text_1,
-                                    image: 'images/video.png'),
-                                SizedBox(height: 20.h),
-                                dialogText(
-                                    title: DialogText.text_2,
-                                    image: 'images/video.png'),
-                                SizedBox(height: 20.h),
-                                dialogText(
-                                    title: DialogText.text_3,
-                                    image: 'images/customer.png'),
-                              ],
+          Positioned(
+            right: 160.w,
+            bottom: -12,
+            child: InkWell(
+              onTap: () {
+                showDialog(
+                  context: context,
+                  builder: (_) {
+                    return Center(
+                      child: Stack(
+                        clipBehavior: Clip.none,
+                        children: [
+                          Container(
+                            height: 328.h,
+                            width: 368.w,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(10.r),
                             ),
-                          ),
-                        ),
-                        Positioned(
-                          right: -15,
-                          top: -15,
-                          child: Material(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(180),
-                            ),
-                            child: InkWell(
-                              onTap: () => Get.back(),
-                              child: SizedBox(
-                                height: 65.h,
-                                width: 65.w,
-                                child: Card(
-                                  color: Colors.white,
-                                  elevation: 10,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(180),
+                            child: Padding(
+                              padding: EdgeInsets.all(30.0),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    DialogText.title,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 24.sp,
+                                      color: Color(0xFF3A3030),
+                                      decoration: TextDecoration.none,
+                                    ),
                                   ),
-                                  child: Icon(Icons.close_outlined),
-                                ),
+                                  SizedBox(height: 30.h),
+                                  dialogText(
+                                      title: DialogText.text_1,
+                                      image: 'images/video.png'),
+                                  SizedBox(height: 20.h),
+                                  dialogText(
+                                      title: DialogText.text_2,
+                                      image: 'images/video.png'),
+                                  SizedBox(height: 20.h),
+                                  dialogText(
+                                      title: DialogText.text_3,
+                                      image: 'images/customer.png'),
+                                ],
                               ),
                             ),
                           ),
-                        )
-                      ],
+                          Positioned(
+                            right: -15,
+                            top: -15,
+                            child: Material(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(180),
+                              ),
+                              child: InkWell(
+                                onTap: () => Get.back(),
+                                child: SizedBox(
+                                  height: 65.h,
+                                  width: 65.w,
+                                  child: Card(
+                                    color: Colors.white,
+                                    elevation: 10,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(180),
+                                    ),
+                                    child: Icon(Icons.close_outlined),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    );
+                  },
+                );
+              },
+              child: Padding(
+                padding: EdgeInsets.only(right: 18.w),
+                child: SizedBox(
+                  height: 70.h,
+                  width: 70.w,
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(180.r)),
+                    child: Icon(
+                      Icons.headphones,
+                      color: Color(0xFFFF7465),
                     ),
-                  );
-                },
-              );
-            },
-            child: Padding(
-              padding: EdgeInsets.only(right: 18.w),
-              child: SizedBox(
-                height: 70.h,
-                width: 70.w,
-                child: Card(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(180.r)),
-                  child: Icon(
-                    Icons.headphones,
-                    color: Color(0xFFFF7465),
                   ),
                 ),
               ),
