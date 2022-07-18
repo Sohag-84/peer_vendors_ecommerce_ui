@@ -4,11 +4,13 @@ import 'package:get/get.dart';
 import '../views/authentication_screen.dart';
 import '../views/choose_language_screen.dart';
 import '../views/login_screen.dart';
-import '../views/my_sell_screen_1.dart';
+import '../views/sell_screen_1.dart';
 import '../views/otp_screen.dart';
 import '../views/pages/navigationbar_page.dart';
 import '../views/pages/onboarding_pages.dart';
 import '../views/register_screen.dart';
+import '../views/sell_screen_2.dart';
+import '../views/sell_screen_3.dart';
 import '../views/splash_screen.dart';
 import '../views/success_screen.dart';
 
@@ -22,6 +24,8 @@ const String successScreen = '/success-screen';
 const String loginScreen = '/login-screen';
 const String bottomNavigationPage = '/bottomNavigation-screen';
 const String mySellScreenOne = '/sellOne-screen';
+const String sellScreenTwo = '/sellTwo-screen';
+const String sellScreenThree = '/sellThree-screen';
 
 List<GetPage> pages = [
   GetPage(name: splashScreen, page: () => SplashScreen()),
@@ -34,4 +38,6 @@ List<GetPage> pages = [
   GetPage(name: loginScreen, page: () => LoginScreen()),
   GetPage(name: bottomNavigationPage, page: () => NavigationbarPage()),
   GetPage(name: mySellScreenOne, page: () => MySellScreenOne()),
+  GetPage(name: sellScreenTwo, page: () => SellScreenTwo()),
+  GetPage(name: sellScreenThree, page: () => SellScreenThree()),
 ];

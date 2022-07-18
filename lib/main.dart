@@ -26,7 +26,6 @@ class MyApp extends StatelessWidget {
       builder: (BuildContext context, Widget? child) {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
-          //home: (),
           initialRoute: mySellScreenOne,
           getPages: pages,
         );

@@ -2,7 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:peer_vendors_ecommerce_ui/constant/colors.dart';
+import 'package:peer_vendors_ecommerce_ui/routes/routes.dart';
 
 import '../widget/custom_radio_button.dart';
 import '../widget/custom_title_subtitle.dart';
@@ -51,6 +53,7 @@ class _MySellScreenOneState extends State<MySellScreenOne> {
                 setState(
                   () {
                     category = value.toString();
+                    Get.toNamed(sellScreenTwo);
                   },
                 );
               },
