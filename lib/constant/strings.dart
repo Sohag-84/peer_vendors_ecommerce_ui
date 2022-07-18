@@ -65,7 +65,12 @@ class DialogText {
   static const String text_3 = "Contact us for Location";
 }
 
-class HomePageText{
+class ScreenFourText {
+  static const String description =
+      "For best result provide a square picture. Do not reduce\nthe width of the picture in  the cropping tools and do\nnot increase the height of the picture in the cropping\ntool.";
+}
+
+class HomePageText {
   static const List<String> categories = [
     "Car,Bikes, Bicycles",
     "Electronics & Appliances",
@@ -90,13 +95,32 @@ class HomePageText{
   ];
 
   static const List<int> prices = [
-    359,403,120,405,300,80,500,250,199,135,229,545,
+    359,
+    403,
+    120,
+    405,
+    300,
+    80,
+    500,
+    250,
+    199,
+    135,
+    229,
+    545,
   ];
 
   static const List<String> watchBrands = [
-    "Apple","Samsung","Jaquet Droz","Rolex","Glashutte Original",
-    "Omega","Jaeger-LeCoultre","Ulysse Nardin","Breguet",
-    "Patek Philippe","Audemars Piguet","TAG Heuer",
+    "Apple",
+    "Samsung",
+    "Jaquet Droz",
+    "Rolex",
+    "Glashutte Original",
+    "Omega",
+    "Jaeger-LeCoultre",
+    "Ulysse Nardin",
+    "Breguet",
+    "Patek Philippe",
+    "Audemars Piguet",
+    "TAG Heuer",
   ];
-
 }

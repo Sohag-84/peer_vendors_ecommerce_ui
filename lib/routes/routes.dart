@@ -11,6 +11,7 @@ import '../views/pages/onboarding_pages.dart';
 import '../views/register_screen.dart';
 import '../views/sell_screen_2.dart';
 import '../views/sell_screen_3.dart';
+import '../views/sell_screen_4.dart';
 import '../views/splash_screen.dart';
 import '../views/success_screen.dart';
 
@@ -26,6 +27,7 @@ const String bottomNavigationPage = '/bottomNavigation-screen';
 const String mySellScreenOne = '/sellOne-screen';
 const String sellScreenTwo = '/sellTwo-screen';
 const String sellScreenThree = '/sellThree-screen';
+const String sellScreenFour = '/sellFour-screen';
 
 List<GetPage> pages = [
   GetPage(name: splashScreen, page: () => SplashScreen()),
@@ -40,4 +42,5 @@ List<GetPage> pages = [
   GetPage(name: mySellScreenOne, page: () => MySellScreenOne()),
   GetPage(name: sellScreenTwo, page: () => SellScreenTwo()),
   GetPage(name: sellScreenThree, page: () => SellScreenThree()),
+  GetPage(name: sellScreenFour, page: () => SellScreenFour()),
 ];
