@@ -2,8 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:peer_vendors_ecommerce_ui/constant/colors.dart';
 import 'package:peer_vendors_ecommerce_ui/constant/strings.dart';
+import 'package:peer_vendors_ecommerce_ui/routes/routes.dart';
 import 'package:peer_vendors_ecommerce_ui/widget/custom_button.dart';
 import 'package:peer_vendors_ecommerce_ui/widget/custom_title_subtitle.dart';
 
@@ -87,7 +89,10 @@ class SellScreenFour extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 30.h),
-                  CustomButton(text: "Continue", onTap: null),
+                  CustomButton(
+                    text: "Continue",
+                    onTap: () => Get.toNamed(successScreen),
+                  ),
                 ],
               ),
             ),
