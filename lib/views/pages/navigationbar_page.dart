@@ -3,13 +3,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:peer_vendors_ecommerce_ui/constant/colors.dart';
-import 'package:peer_vendors_ecommerce_ui/constant/strings.dart';
-import 'package:peer_vendors_ecommerce_ui/routes/routes.dart';
-import 'package:peer_vendors_ecommerce_ui/views/pages/account_page.dart';
-import 'package:peer_vendors_ecommerce_ui/views/pages/chat_page.dart';
-import 'package:peer_vendors_ecommerce_ui/views/pages/home_page.dart';
-import 'package:peer_vendors_ecommerce_ui/views/pages/my_adds_page.dart';
+
+import '../../constant/colors.dart';
+import '../../constant/strings.dart';
+import 'account_page.dart';
+import 'chat_page.dart';
+import 'home_page.dart';
+import 'my_adds_page.dart';
 
 class NavigationbarPage extends StatefulWidget {
   const NavigationbarPage({Key? key}) : super(key: key);
@@ -70,8 +70,6 @@ class _NavigationbarPageState extends State<NavigationbarPage> {
         ],
       ),
       body: Stack(
-        // mainAxisAlignment: MainAxisAlignment.center,
-        // crossAxisAlignment: CrossAxisAlignment.center,
         clipBehavior: Clip.none,
         children: [
           Positioned(

@@ -1,11 +1,10 @@
 // ignore_for_file: unused_field, prefer_const_constructors
 
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:peer_vendors_ecommerce_ui/constant/colors.dart';
-import 'package:peer_vendors_ecommerce_ui/constant/strings.dart';
+
+import '../../constant/colors.dart';
+import '../../constant/strings.dart';
 
 class HomePages extends StatelessWidget {
   HomePages({Key? key}) : super(key: key);
