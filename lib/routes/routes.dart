@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import '../views/authentication_screen.dart';
 import '../views/choose_language_screen.dart';
 import '../views/login_screen.dart';
+import '../views/my_sell_screen_1.dart';
 import '../views/otp_screen.dart';
 import '../views/pages/navigationbar_page.dart';
 import '../views/pages/onboarding_pages.dart';
@@ -20,6 +21,7 @@ const String otpScreen = '/otp-screen';
 const String successScreen = '/success-screen';
 const String loginScreen = '/login-screen';
 const String bottomNavigationPage = '/bottomNavigation-screen';
+const String mySellScreenOne = '/sellOne-screen';
 
 List<GetPage> pages = [
   GetPage(name: splashScreen, page: () => SplashScreen()),
@@ -31,4 +33,5 @@ List<GetPage> pages = [
   GetPage(name: successScreen, page: () => SuccessScreen()),
   GetPage(name: loginScreen, page: () => LoginScreen()),
   GetPage(name: bottomNavigationPage, page: () => NavigationbarPage()),
+  GetPage(name: mySellScreenOne, page: () => MySellScreenOne()),
 ];

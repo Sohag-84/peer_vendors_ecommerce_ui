@@ -31,7 +31,6 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> {
                 child: Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: Column(
-                    //crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(
                         height: 54.h,
@@ -43,8 +42,6 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> {
                             fontWeight: FontWeight.w600,
                             fontSize: 20.sp),
                       ),
-                      // buildListTile(title: "fMale",value: "Female",v: "v1"),
-                      // buildListTile(title: "Male",value: "Female",v: "V"),
                       SizedBox(
                         height: 30.h,
                         child: ListTile(
@@ -62,7 +59,6 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> {
                             fillColor: MaterialStateColor.resolveWith(
                               (states) => Colors.green,
                             ),
-                            //focusColor: MaterialStateColor.resolveWith((states) => Colors.blue),
                             value: "English",
                             groupValue: language,
                             onChanged: (value) {
@@ -94,7 +90,6 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> {
                             fillColor: MaterialStateColor.resolveWith(
                               (states) => Colors.green,
                             ),
-                            //focusColor: MaterialStateColor.resolveWith((states) => Colors.blue),
                             value: "Bangla",
                             groupValue: language,
                             onChanged: (value) {
@@ -126,7 +121,6 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> {
                             fillColor: MaterialStateColor.resolveWith(
                               (states) => Colors.green,
                             ),
-                            //focusColor: MaterialStateColor.resolveWith((states) => Colors.blue),
                             value: "Hindi",
                             groupValue: language,
                             onChanged: (value) {
