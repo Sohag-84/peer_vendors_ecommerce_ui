@@ -5,7 +5,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:peer_vendors_ecommerce_ui/views/pages/onboarding_pages.dart';
+import 'package:peer_vendors_ecommerce_ui/routes/routes.dart';
 
 import '../constant/colors.dart';
 
@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 1), () => Get.to(() => (OnboardingPages())));
+    Timer(Duration(seconds: 3), () => Get.offAllNamed(chooseLanguageScreen));
   }
 
   @override

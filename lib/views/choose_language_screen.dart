@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:peer_vendors_ecommerce_ui/constant/colors.dart';
 import 'package:peer_vendors_ecommerce_ui/constant/strings.dart';
+import 'package:peer_vendors_ecommerce_ui/routes/routes.dart';
 
 class ChooseLanguageScreen extends StatefulWidget {
   const ChooseLanguageScreen({Key? key}) : super(key: key);
@@ -38,9 +40,10 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> {
                       Text(
                         ChooseLanguageText.title,
                         style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 20.sp),
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 20.sp,
+                        ),
                       ),
                       SizedBox(
                         height: 30.h,
@@ -50,9 +53,10 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> {
                           title: Text(
                             ChooseLanguageText.language_1,
                             style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w500,
-                                fontSize: 15.sp),
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 15.sp,
+                            ),
                           ),
                           leading: Radio(
                             hoverColor: Colors.lightGreenAccent,
@@ -65,6 +69,7 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> {
                               setState(
                                 () {
                                   language = value.toString();
+                                  Get.offAllNamed(onboardingPage);
                                 },
                               );
                             },
