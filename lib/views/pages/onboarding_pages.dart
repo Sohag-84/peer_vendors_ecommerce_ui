@@ -112,24 +112,29 @@ class OnboardingPages extends StatelessWidget {
                 _controller.forwardAction();
               },
               child: Container(
-                  height: 80.h,
-                  width: 150.w,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFC4C4C4),
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(50.r),
-                    ),
+                height: 80.h,
+                width: 150.w,
+                decoration: BoxDecoration(
+                  color: Color(0xFFC4C4C4),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(50.r),
                   ),
-                  child: Center(
-                    child: Text(
-                      "NEXT",
-                      style: TextStyle(
-                        fontSize: 24.sp,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xFF3A3030),
-                      ),
-                    ),
-                  )),
+                ),
+                child: Center(
+                  child: Obx(
+                    () {
+                      return Text(
+                        _controller.isLastPage ? "Start" : "Next",
+                        style: TextStyle(
+                          fontSize: 24.sp,
+                          fontWeight: FontWeight.w600,
+                          color: Color(0xFF3A3030),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ),
             ),
           )
         ],
