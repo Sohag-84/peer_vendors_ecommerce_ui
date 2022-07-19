@@ -16,9 +16,11 @@ class HomePages extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: BackgroundColor.bg_color,
+      //floatingActionButton: FloatingActionButton(),
       drawer: Drawer(
         child: SingleChildScrollView(
           child: Column(
+            // ignore: prefer_const_literals_to_create_immutables
             children: [
               MyHeaderDrawer(),
             ],
