@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../constant/colors.dart';
 import '../../constant/strings.dart';
+import '../../widget/my_header_drawer.dart';
 
 class HomePages extends StatelessWidget {
   HomePages({Key? key}) : super(key: key);
@@ -15,6 +16,15 @@ class HomePages extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: BackgroundColor.bg_color,
+      drawer: Drawer(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              MyHeaderDrawer(),
+            ],
+          ),
+        ),
+      ),
       body: SafeArea(
         child: NestedScrollView(
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
